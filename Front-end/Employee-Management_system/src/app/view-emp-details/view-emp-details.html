@@ -1,0 +1,45 @@
+
+<div class="details-container">
+
+    <h2>Employee Details</h2>
+
+    <div class="detail-row">
+        <span class="label">Employee ID</span>
+        <span class="value">{{ employee.id }}</span>
+    </div>
+
+    <div class="detail-row">
+        <span class="label">Full Name</span>
+        <span class="value">{{ employee.fullname }}</span>
+    </div>
+
+    <div class="detail-row">
+        <span class="label">Email</span>
+        <span class="value">{{ employee.email }}</span>
+    </div>
+
+    <div class="detail-row">
+        <span class="label">Date Of Joining</span>
+        <span class="value">
+            {{ employee.doj | date:'dd-MMM-yyyy' }}
+        </span>
+    </div>
+
+    <div class="detail-row">
+        <span class="label">Project</span>
+        <span class="value">{{ employee.project }}</span>
+    </div>
+
+    <div class="button-container">
+
+        <button (click)="goBack()">
+            Back
+        </button>
+
+        <button (click)="goHome()">
+            Home
+        </button>
+
+    </div>
+
+</div>

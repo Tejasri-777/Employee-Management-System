@@ -1,0 +1,95 @@
+.employee-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f7fc;
+    padding: 30px;
+}
+
+.employee-card {
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.10);
+}
+
+.header-section {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.header-section h2 {
+    color: #2c3e50;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.header-section p {
+    color: #6c757d;
+    margin: 0;
+}
+
+.form-label {
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.form-control {
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(13,110,253,0.15);
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.button-group .btn {
+    min-width: 140px;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.success-card {
+    text-align: center;
+    padding: 20px;
+}
+
+.success-icon {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.success-card h3 {
+    color: #198754;
+    margin-bottom: 10px;
+}
+
+.success-card p {
+    color: #6c757d;
+    margin-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+
+    .employee-card {
+        padding: 25px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .button-group .btn {
+        width: 100%;
+    }
+}

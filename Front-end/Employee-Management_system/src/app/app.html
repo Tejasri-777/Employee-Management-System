@@ -1,0 +1,87 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
+
+    <div class="container">
+
+        <a class="navbar-brand fw-bold company-name" routerLink="/home">
+    Olivia Solutions
+</a>
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div
+            class="collapse navbar-collapse"
+            id="navbarNav">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a
+                        routerLink="/home"
+                        routerLinkActive="active"
+                        class="nav-link">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a
+                        routerLink="/employees"
+                        routerLinkActive="active"
+                        class="nav-link">
+                        Employee List
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a
+                        routerLink="/add-employee"
+                        routerLinkActive="active"
+                        class="nav-link">
+                        Add Employee
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<!-- Page Content -->
+<div class="main-content">
+    <router-outlet></router-outlet>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+
+    <div class="container text-center">
+
+        <h5>Olivia Solutions</h5>
+
+        <p>
+            Our employees are the foundation of our success.
+            We are committed to fostering innovation,
+            supporting career growth, and building a workplace
+            where every individual can thrive.
+        </p>
+
+        <small>
+            © 2026 Olivia Solutions | Inspired by People. Driven by Excellence.
+        </small>
+
+    </div>
+
+</footer>
+

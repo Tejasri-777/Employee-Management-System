@@ -1,0 +1,142 @@
+<!-- <h2>Employee List</h2>
+
+<table border="1" width="100%">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Full Name</th>
+      <th>Email</th>
+      <th>Date Of Joining</th>
+      <th>Project</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    <tr *ngFor="let employee of employees">
+
+      <td>{{ employee.id }}</td>
+      <td>{{ employee.fullname }}</td>
+      <td>{{ employee.email }}</td>
+       <td>{{ employee.doj | date:'dd-MMM-yyyy' }}</td>
+      <td>{{ employee.project }}</td>
+
+      <td>
+
+        <button
+          (click)="viewEmployee(employee.id!)">
+          View
+        </button>
+
+        <button
+          (click)="updateEmployee(employee.id!)">
+          Update
+        </button>
+
+        <button
+          (click)="deleteEmployee(employee.id!)">
+          Delete
+        </button>
+
+      </td>
+
+    </tr>
+
+  </tbody>
+</table> -->
+
+
+
+
+
+<h2>Employee List</h2>
+
+<!-- <div class="pagination-info">
+
+  <strong>Total Employees:</strong>
+  {{ totalEmployees }}
+
+  |
+
+  <strong>Page:</strong>
+  {{ currentPage }}
+
+  of
+
+  {{ totalPages }}
+
+</div> -->
+
+
+<table border="1" width="100%">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Full Name</th>
+      <th>Email</th>
+      <th>Date Of Joining</th>
+      <th>Project</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    <tr *ngFor="let employee of pagedEmployees">
+
+      <td>{{ employee.id }}</td>
+      <td>{{ employee.fullname }}</td>
+      <td>{{ employee.email }}</td>
+       <td>{{ employee.doj | date:'dd-MMM-yyyy' }}</td>
+      <td>{{ employee.project }}</td>
+
+      <td>
+
+        <button
+          (click)="viewEmployee(employee.id!)">
+          View
+        </button>
+
+        <button
+          (click)="updateEmployee(employee.id!)">
+          Update
+        </button>
+
+        <button
+          (click)="deleteEmployee(employee.id!)">
+          Delete
+        </button>
+
+      </td>
+
+    </tr>
+  </tbody>
+</table> 
+
+
+
+
+<div class="pagination-buttons">
+
+  <button
+    (click)="previousPage()"
+    [disabled]="currentPage === 1">
+
+    Previous
+
+  </button>
+
+  <button
+    (click)="nextPage()"
+    [disabled]="currentPage === totalPages">
+
+    Next
+
+  </button>
+
+  <button (click)="goHome()">
+    Home
+  </button>
+
+</div>
