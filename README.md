@@ -101,6 +101,16 @@ Employee-Management-System
 
 ---
 
+## Demo Video
+
+Watch the project demonstration here:
+
+[Employee Management System Demo](https://docs.google.com/videos/d/11WXAsKMmJOEPZWsbWlSldNUSCiyMjic2xJEfZ9jlIwg/play?usp=sharing)
+
+
+
+---
+
 ## Database Setup
 
 1. Create a MySQL database:
